@@ -206,7 +206,11 @@ TEST(ConnectXTest, placePieceAtNegativePos)
 {
   ConnectX connectX;
 
-	//connectX.placePiece(-1);
-	ASSERT_TRUE(0);
+	/*
+	 * I am not asserting anything because below line results in Segmentation
+	 * fault. I am running this on Ubuntu Mate 15.04.
+	 */
+	connectX.placePiece(-1);
+	//ASSERT_TRUE(0);
 
 }
